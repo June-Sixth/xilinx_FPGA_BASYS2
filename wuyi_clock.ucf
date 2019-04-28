@@ -1,0 +1,28 @@
+#Created by Constraints Editor (xc3s100e-cp132-4) - 2018/12/18
+NET "clk_100m" TNM_NET = "clk";
+TIMESPEC TS_clk = PERIOD "clk" 20 ns HIGH 50 %;
+NET "clk_100m" SLEW = FAST;
+NET "clk_100m" LOC = B8	| IOSTANDARD = "LVCMOS33";
+
+NET "pos<0>" LOC = F12	| IOSTANDARD = "LVCMOS33";
+NET "pos<1>" LOC = J12	| IOSTANDARD = "LVCMOS33";
+NET "pos<2>" LOC = M13	| IOSTANDARD = "LVCMOS33";
+NET "pos<3>" LOC = K14	| IOSTANDARD = "LVCMOS33";
+NET "seg[0]" LOC = L14	| IOSTANDARD = "LVCMOS33";
+NET "seg[1]" LOC = H12	| IOSTANDARD = "LVCMOS33";
+NET "seg[2]" LOC = N14	| IOSTANDARD = "LVCMOS33";
+NET "seg[3]" LOC = N11	| IOSTANDARD = "LVCMOS33";
+NET "seg[4]" LOC = P12	| IOSTANDARD = "LVCMOS33";
+NET "seg[5]" LOC = L13	| IOSTANDARD = "LVCMOS33";
+NET "seg[6]" LOC = M12	| IOSTANDARD = "LVCMOS33";
+//NET "seg[7]" LOC = N13	| IOSTANDARD = "LVCMOS33";
+
+# Pin assignment for SWs
+NET "day_night" LOC = "N3"	| IOSTANDARD = "LVCMOS33";  # Bank = 2, Signal name = SW7
+NET "cr" LOC = "E2"	| IOSTANDARD = "LVCMOS33";  # Bank = 3, Signal name = SW6
+NET "alarm_adjust_disp" LOC = "F3"	| IOSTANDARD = "LVCMOS33";  # Bank = 3, Signal name = SW5
+NET "min_hour_set" LOC = "G3"	| IOSTANDARD = "LVCMOS33";  # Bank = 3, Signal name = SW4
+NET "clock_alarm_set" LOC = "B4"	| IOSTANDARD = "LVCMOS33";  # Bank = 3, Signal name = SW3
+NET "clock_alarm_en" LOC = "K3"	| IOSTANDARD = "LVCMOS33";  # Bank = 3, Signal name = SW2
+NET "clock_adjust" LOC = "L3"	| IOSTANDARD = "LVCMOS33";  # Bank = 3, Signal name = SW1
+NET "en_clock" LOC = "P11"	| IOSTANDARD = "LVCMOS33";  # Bank = 2, Signal name = SW0
